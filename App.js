@@ -14,11 +14,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Read" component={Read} options={{headerShown:false}} />
-        <Stack.Screen name="SelectChaper" component={SelectChaper} options={{headerShown:false}} />
-        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
-        <Stack.Screen name="OpenApp" component={OpenAppScreen} options={{headerShown: false}}/>
-        <Stack.Screen name="AddToCart" component={AddToCart} options={{headerShown:false}} />
+        <Stack.Screen name="OpenApp" component={OpenAppScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="AddToCart" component={AddToCart} options={{ headerShown: false }} />
+        <Stack.Screen name="Read" component={Read} options={{ headerShown: false }} />
+        <Stack.Screen name="SelectChaper" component={SelectChaper} options={{ headerShown: false }} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
