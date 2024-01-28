@@ -6,12 +6,16 @@ import OpenAppScreen from './Screens/OpenAppScreen';
 import HomeScreen from './Screens/HomeScreen';
 
 import AddToCart from './Screens/AddToCart';
+import SelectChaper from './Screens/SelectChaper';
+import Read from './Screens/Read';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Read" component={Read} options={{headerShown:false}} />
+        <Stack.Screen name="SelectChaper" component={SelectChaper} options={{headerShown:false}} />
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
         <Stack.Screen name="OpenApp" component={OpenAppScreen} options={{headerShown: false}}/>
         <Stack.Screen name="AddToCart" component={AddToCart} options={{headerShown:false}} />

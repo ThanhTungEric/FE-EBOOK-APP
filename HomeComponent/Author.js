@@ -47,11 +47,11 @@ const data = [
 export default function Author() {
     return (
         <View style={styles.container}>
-            <View style={{flexDirection: "row", alignItems: "center", justifyContent: 'space-between', paddingHorizontal: 10, marginBottom: 10}}>
+            <View style={{flexDirection: "row", alignItems: "center", justifyContent: 'space-between', paddingHorizontal: 10}}>
                 <Text style={{fontSize: 17, fontWeight: "bold" }}>Popular Authors</Text>
                 <Text>View more</Text>
             </View>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginTop: 10}}>
                 {
                     data.map((item, index) => {
                         return (
@@ -69,7 +69,6 @@ export default function Author() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#fff',
     },
 });
